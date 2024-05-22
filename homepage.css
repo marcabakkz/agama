@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+    }
+    .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background-color: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    }
+    .logo {
+    color: blue;
+    font-size: 40px;
+    }
+    span {
+    color: red;
+    font-size: 40px;
+    }
+    .navbar a {
+    font-size: 20px;
+    color: aqua;
+    padding: 0 20px;
+    }
+    .home-content {
+    position: relative;
+    top: 69px;
+    padding: 30px;
+    background-image: url('images/gogogo.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 80vh; 
+    max-width: 1250px; 
+    margin: 0 auto; 
+    border: 1px solid brown;
+    border-radius: 8px;
+    }
+    .hero {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .hero h1 { 
+    color: rgb(233, 4, 16);
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 10px;
+    }
+    .hero p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    }
+    .hero input[type="button"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    }   
+    .menu-tab {
+    display: flex;
+    justify-content: space-around;
+    }
+    .menu-1, .menu-2 {
+    width: 45%;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 7px;
+    }
+    .menu-1 h2, .menu-2 h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    .menu-1 p, .menu-2 p {
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+    .menu-1 input[type="button"], .menu-2 input[type="button"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
+    }
+    .menu-1 input[type="button"]:hover {
+    background-color: violet;
+    }
+    .menu-2 input[type="button"]:hover {
+    background-color: violet;
+    }
+    .bar-section {
+    position: relative;
+    top: 90px;
+    }
+    .belief-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .bar-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    
+    .bar-menu1, .bar-menu2, .bar-menu3, .bar-menu4, .bar-menu5, .bar-menu6, .bar-menu7, .bar-menu8, .bar-menu9 {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .bar-menu1 h4, .bar-menu2 h4, .bar-menu3 h4,
+    .bar-menu4 h4, .bar-menu5 h4, .bar-menu6 h4, .bar-menu7 h4, .bar-menu8, .bar-menu9 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    }
+    
+    .bar-menu1 p, .bar-menu2 p, .bar-menu3 p,
+    .bar-menu4 p, .bar-menu5 p, .bar-menu6 p, .bar-menu7 p, .bar-menu8 p, .bar-menu9 p {
+    color: #666;
+    }
+    .bible-section {
+    position: relative;
+    top: 95px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .bible-article {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .bible-menu1, .bible-menu2 {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .bible-menu1 h4, .bible-menu2 h4 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    }
+    
+    .bible-menu1 p, .bible-menu2 p {
+    color: #666;
+    margin-bottom: 10px;
+    }
+    
+    .article {
+    transition: transform 0.3s;
+    }
+    
+    .article:hover {
+    transform: translateY(-5px);
+    }
+    input[value="read this version"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
+    background-color: red; 
+    color: white;
+    }
+    
+    input[value="read this version"]:hover {
+    background-color: violet;
+    }
+    .getapp-section {
+    position: relative;
+    top: 110px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    background-image: url('images/pexels-pixabay-268533.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh; 
+    max-width: 1250px; 
+    margin: 0 auto; 
+    }
+    
+    .getapp-article h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    
+    .getapp-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    }
+    .getapp-button a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    }
+    .app-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    }
+    
+    .button-text {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+    }
+    
+    .button-text:hover {
+    background-color: #0056b3;
+    }

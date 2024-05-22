@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BibleWord--MarcoBakkara--</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background-color: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.logo {
+    color: blue;
+    font-size: 40px;
+}
+
+span {
+    color: red;
+    font-size: 40px;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: aqua;
+    padding: 0 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+.heading {
+    margin-top: 2%;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.heading::after,
+.translation-section::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    margin: 20px 0;
+}
+
+
+.heading::after,
+.translation-section::before {
+    animation: lineAnimation 2s infinite;
+}
+
+@keyframes lineAnimation {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+.introduce-heading {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #f4f4f4, #fff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bible-books {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.bible-books h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+.book-name {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.book-name a {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    color: #007bff;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-name a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.translation-section {
+    margin-top: 2%;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.introduce-translation {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #f4f4f4, #fff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bible-books2 {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.bible-books2 h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.book-name2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.book-name2 a {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-name2 a:hover {
+    background-color: blue;
+    color: white;
+}
+
+</style>
+<body>
+    <header class="header">
+        <a class="logo" href="homepage.html">Bible<span>Word</span></a>
+        <img src="images/doves-transparent-background-12.png" alt="Logo"  style="position: relative;
+        top: 0; right: 345px; height: 100%; width: auto;">
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="information.html">Info</a>
+            <a href="translation.html">Bible</a>
+            <a href="#getapp-section">Get App</a>
+        </nav>
+    </header>
+    <main class="heading">
+        <div class="introduce-heading">
+            Terjemahan Baru is the official translation of Indonesia nowadays. This only sets the New Testament because this is the second edition of Terjemahan Baru, Indonesian Translation Bible.
+        </div>
+        <div class="bible-books">
+            <h1>New Testament</h1>
+            <div class="book-name">
+                <a href="#">Matius</a>
+                <a href="#">Markus</a>
+                <a href="#">Lukas</a>
+                <a href="#">Yohanes</a>
+                <a href="#">Kisah Para Rasul</a>
+                <a href="#">Roma</a>
+                <a href="#">1 Korintus</a>
+                <a href="#">2 Korintus</a>
+                <a href="#">Galatia</a>
+                <a href="#">Efesus</a>
+                <a href="#">Filipi</a>
+                <a href="#">Kolose</a>
+                <a href="#">1 Tesalonika</a>
+                <a href="#">2 Tesalonika</a>
+                <a href="#">1 Timotius</a>
+                <a href="#">2 Timotius</a>
+                <a href="#">Titus</a>
+                <a href="#">Filemon</a>
+                <a href="#">Ibrani</a>
+                <a href="#">Yakobus</a>
+                <a href="#">1 Petrus</a>
+                <a href="#">2 Petrus</a>
+                <a href="#">1 Yohanes</a>
+                <a href="#">2 Yohanes</a>
+                <a href="#">Yudas</a>
+                <a href="#">Wahyu</a>
+            </div>
+        </div>
+    </main>
+    <section class="translation-section">
+        <div class="introduce-translation">
+            Indonesian Standard Version is the Indonesian Bible Translation that translated by us. We translate this easier than you think. But for now, we translate the New Testament first because this is the new launch Bible Translation.
+            <div class="bible-books2">
+                <h1>New Testament</h1>
+                <div class="book-name2">
+                <a href="#">Matius</a>
+                <a href="#">Markus</a>
+                <a href="#">Lukas</a>
+                <a href="#">Yohanes</a>
+                <a href="#">Kisah Para Rasul</a>
+                <a href="#">Roma</a>
+                <a href="#">1 Korintus</a>
+                <a href="#">2 Korintus</a>
+                <a href="#">Galatia</a>
+                <a href="#">Efesus</a>
+                <a href="#">Filipi</a>
+                <a href="#">Kolose</a>
+                <a href="#">1 Tesalonika</a>
+                <a href="#">2 Tesalonika</a>
+                <a href="#">1 Timotius</a>
+                <a href="#">2 Timotius</a>
+                <a href="#">2 Timotius</a>
+                <a href="#">Titus</a>
+                <a href="#">Filemon</a>
+                <a href="#">Ibrani</a>
+                <a href="#">Yakobus</a>
+                <a href="#">1 Petrus</a>
+                <a href="#">2 Petrus</a>
+                <a href="#">1 Yohanes</a>
+                <a href="#">2 Yohanes</a>
+                <a href="#">Yudas</a>
+                <a href="#">Wahyu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
